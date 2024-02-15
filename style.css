@@ -1,0 +1,96 @@
+/* rgb(164, 5, 97); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background: url('img/backgraund.jpg') no-repeat;
+    background-size: cover ;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 12vh;
+    width: 100%;
+    background-color: rgba(17, 20, 27, 0.863);
+}
+.logo, .logo a, .logo img{
+    position: absolute;
+    left: 0;
+    height: 100px;
+    width: 200px;
+}
+.nav, .nav li, .nav a{
+    display: flex;
+    gap: 40px;
+}
+li, a {
+    text-decoration: none;
+    display: block;
+}
+.nav a{
+    font-size: 30px;
+    color: rgb(164, 5, 97);
+}
+.nav a:hover{
+    transition: .6s;
+    color: brown;
+}
+#btn, .menu{
+    display: none;
+}
+#menu{
+    width: 200px;
+    height: 88vh;
+    position: absolute;
+    right: 0;
+    background-color: rgba(17, 20, 27, 0.863);
+}
+#menu a{
+    text-align: center;
+    width: 200px;
+    color: rgb(164, 5, 97);
+}
+#menu a:hover{
+    transition: .4s;
+    background-color: midnightblue;
+}
+@media (max-width:800px) {
+    nav{
+        display: none;
+    }
+    #btn{
+        background: url('img/menu.svg') no-repeat;
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 40px;
+        
+    }
+    #menu a{
+        font-size: 20px;
+    }
+}
+@media (max-width:480px) {
+    #btn{
+        width: 20px;
+        height: 20px;  
+    }
+    #menu a{
+        font-size: 10px;
+    }
+    .logo, .logo a, .logo img{
+        height: 80px;
+        width: 180px;
+    }
+}
+
